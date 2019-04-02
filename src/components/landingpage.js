@@ -1,49 +1,41 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
-
+import Img from '../assets/images/1.jpeg'
 
 class Landing extends Component {
   render() {
     return(
       <div style={{width: '100%', margin: 'auto'}}>
         <Grid className="landing-grid">
-          <Cell col={12}>
+          <Cell col={12} phone={12} tablet={12}>
             <img
-              src="https://www.shareicon.net/download/2015/09/18/103157_man_512x512.png"
+              src={Img}
               alt="avatar"
               className="avatar-img"
               />
-
             <div className="banner-text">
-              <h1>Full Stack Web Developer</h1>
+              <h1 className="fullcolorh1">
+                  FullStack Web Developer
+              </h1>
+              <hr/>
+              <p>HTML/CSS | Bootstrap | Material UI | Semantic UI | <br/> PHP | Javascript | Vue JS |  React JS | Node JS | Express JS | Laravel | CodeIgniter | <br/> MongoDB | MySQL</p>
+              <div className="social-links">
+                <a href="https://api.whatsapp.com/send?phone=6282120487094&text=Hai%20mas%20Dea,saya%20tertarik,%20untuk%20..." rel="noopener noreferrer" target="_blank" title="My Business Number">
+                  <i className="fa fa-whatsapp" aria-hidden="true" style={{color: "#25D366"}} />
+                </a>
 
-            <hr/>
+                <a href="https://github.com/deaaprizal" rel="noopener noreferrer" target="_blank" title="My Github Repository">
+                  <i className="fa fa-github-square" aria-hidden="true" style={{color: "#dd5143"}} />
+                </a>
 
-          <p>HTML/CSS | Bootstrap | JavaScript | React | React Native | NodeJS | Express | MongoDB</p>
+                <a href="https://www.linkedin.com/in/dea-aprizal/" rel="noopener noreferrer" target="_blank" title="My LinkedIn Profile">
+                  <i className="fa fa-linkedin-square" aria-hidden="true" style={{color: "#0077b5"}}/>
+                </a>
 
-        <div className="social-links">
-
-          {/* LinkedIn */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-linkedin-square" aria-hidden="true" />
-          </a>
-
-          {/* Github */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-github-square" aria-hidden="true" />
-          </a>
-
-          {/* Freecodecamp */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-free-code-camp" aria-hidden="true" />
-          </a>
-
-          {/* Youtube */}
-          <a href="http://google.com" rel="noopener noreferrer" target="_blank">
-            <i className="fa fa-youtube-square" aria-hidden="true" />
-          </a>
-
-        </div>
+                <a href="https://instagram.com/deaaprizal" rel="noopener noreferrer" target="_blank" title="My Instagram Account">
+                  <i className="fa fa-instagram" aria-hidden="true" style={{color: "#FFDC80"}}/>
+                </a>
+              </div>
             </div>
           </Cell>
         </Grid>

@@ -16,14 +16,21 @@
   height: 100%;
 }
 
+.fullcolorh1 { 
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .projects-grid {
   display: flex;
 }
 
 /* Resume Page css */
 .resume-right-col {
-  background: #27221F;
-  color: white;
+  background: #f7f7f7;
   padding: 2em;
 }
 
